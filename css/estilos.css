@@ -12,8 +12,8 @@ body{
 }
 
 #contenedor{
-	width: 895px;
-	height: 620px;
+	width: 80%;
+	height: 800px;
 	margin: auto;
 	margin-top: 40px;
 	overflow: hidden;
@@ -34,7 +34,7 @@ h1{
 	float: right; 
 	margin-right: 50px;
 	color: #FFFFFF;
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: bold;
 	
 	
