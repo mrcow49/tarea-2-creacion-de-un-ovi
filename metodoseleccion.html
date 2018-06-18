@@ -12,35 +12,66 @@
 	<link rel="stylesheet" href="css/estilos.css">
 
 </head>
+
 <body>
+	<!--definicion del contedor principal como contenedor-->
 	<div id="contenedor">
 		<header>
-
+			<!--inserccion logo de la UNAD-->
 			<imagen id="logo_unad">
-				<img src="img/logoUNAD.png" alt="logo de la universidad">
+				<img id="unadlogo" src="img/logoUNAD.png" alt="logo de la universidad">
 			</imagen>
 			<h1>METODOS DE ORDENACIÓN CON PROGRAMACION ORIENTADA A OBJETOS</h1>
+			
+			
+			
 		</header>
+		<!--definicion del menu-->
+		<nav>
+			<h2>Metodos de ordenamiento de la información</h2>
+			<ul class="menu">
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="#">Material de lectura</a>
+					<ul>
+						<li><a href="tipovariables.html">Presentación Tipos de variables</a></li>
+						<li><a href="vector.html">Presentación que es un vector</a></li>
+						<li><a href="metodoburbuja.html">Presentación metodo burbuja</a></li>
+						<li><a href="metodoseleccion.html">Presentación metodo Selección</a></li>
+						<li><a href="metodoinsercion.html">Presentación metodo Inserción</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Material multimedia</a>
+					<ul>
+						<li><a href="videoburbuja.html">Video metodo Burbuja</a></li>
+						<li><a href="videoseleccion.html">Video metodo Selección</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Actividades</a>
+					<ul>
+						<li>
+							<a href="actividadburbuja.html">Actividades metodo burbuja</a>
+						</li>
+						<li>
+							<a href="actividadseleccion.html">Actividades metodo seleccion</a>
+						</li>
+						<li>
+							<a href="actividadinsercion.html">Actividades metodo inserción</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="participantes.html">Autor</a>
+				</li>
 
-	<nav>
-		<h2>Metodos de ordenamiento de la información</h2>
-		<ul>
-			<li>
-				<a href="index.html">Inicio</a>
-			</li>
-			<li>
-				<a href="metodoburbuja.html">Metodo Burbuja</a>
-			</li>
-			<li>
-				<a href="metodoinsercion.html">Metodo Inserción</a>
-			</li>
-		</ul>
-	</nav>
-
-	<section id="linkestado">
-			<h4>Metodos de ordenamiento &gt Metodo burbuja &gt Metodo selección</h4>
-		</section>
-	
+			</ul>
+		</nav>
+		
+		<!--contenido de la pagina-->
 		<section id="contenido">
 			
 
@@ -48,9 +79,9 @@
 				<h3>Metodo de Ordenamiento por Selección</h3>
 				<br>
 				<p>En este método recorreremos el vector desde la posición 0 hasta la posición n-1 (n=tamaño del vector), el método consiste en buscar el valor de mayor tamaño y colocarlo en el final del arreglo, la cantidad de pasadas será igual a n-1, es decir tomaremos el elemento de la posición 0 y lo compararemos con el de la posición 1 si el elemento de la posición 0 es mayor no haremos nada y lo compararemos la posición 0 con la posición 2, sin embargo si es menor tomaremos el elemento de la posición 1 y lo compararemos con el de la posición 2 y así sucesivamente hasta completar el vector, una vez se realiza la comparación con el ultimo y determinamos que el elemento que estamos comparando es el mayor lo ubicaremos en la última posición y el elemento contra el que se comparó lo ubicamos en la posición que tenía el elemento anterior (cambian de posición), la siguiente comparación no se realizara hasta n-1 sino hasta n-2 y así sucesivamente hasta llegar a n-n debido esto a que ya sabemos que en la última posición se encuentra el elemento con mayor peso entonces no habría necesidad de volver a comparar contra este.</p>
+
 			</article>
-			<iframe class="tscplayer_inline" name="tsc_player" src="metodoseleccion/metodo seleccion_player.html" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		
+			
 			
 		</section>
 		<section id="contenido1">
@@ -59,16 +90,26 @@
 				
 			</hgroup>
 		</section>
-		<section id="boton">
-			<a href="metodoinsercion.html">Siguiente</a>
-		</section>
-		<section id="twitterunad">
-			<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</section>
+		
+		<!--espacio de Twitter-->
+		<aside >
+			<section id="twitterunad">
+				<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+		</aside>
+		<!-- Definicion de los botones de avance-->
+	 	<div class="boton_previous">
+		<a href="metodoburbuja.html">&lt</a>
+		</div>
+		<div class="boton_next">
+			<a href="metodoinsercion.html">&gt</a>
+
+		</div>
 	
 	
 	</div>
-
+	
+	<!-- contenido del pie de pagina-->	
 	<footer>
 		Salomon Vaca Ahumada.
 		<br>
@@ -77,14 +118,27 @@
 		<a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</footer>
 	
-
-
-
-
-
-
+	
+	
+	<!-- Insercion de librerias de javaScript-->
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/modernizr-custom.js"></script>
-	<script src="js/prefixfree.js"></script>	
+	<script src="js/prefixfree.js"></script>
+
 </body>
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

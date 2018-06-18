@@ -11,41 +11,70 @@
 
 </head>
 <body>
+	<!--definicion del contedor principal como contenedor-->
 	<div id="contenedor">
 		<header>
-
+			<!--inserccion logo de la UNAD-->
 			<imagen id="logo_unad">
-				<img src="img/logoUNAD.png" alt="logo de la universidad">
+				<img id="unadlogo" src="img/logoUNAD.png" alt="logo de la universidad">
 			</imagen>
 			<h1>METODOS DE ORDENACIÓN CON PROGRAMACION ORIENTADA A OBJETOS</h1>
-		</header>
-
-	<nav>
-		<h2>Metodos de ordenamiento de la información</h2>
-		<ul>
-			<li>
-				<a href="index.html">Inicio</a>
-			</li>
-			<li>
-				<a href="metodoburbuja.html">Metodo Burbuja</a>
-			</li>
-			<li>
-				<a href="metodoseleccion.html">Metodo Selección</a>
-			</li>
-			<li>
-				<a href="metodoinsercion.html">Metodo Inserción</a>
-			</li>
-		</ul>
-	</nav>
-
-	<section id="linkestado">
-			<h4>Metodos de ordenamiento &gt Metodo burbuja &gt Metodo selección &gt Metodo inserción &gt Autores</h4>
-		</section>
-	
-		<section id="contenido">
 			
-			<article class="articulos">
-				
+			
+			
+		</header>
+		<!--definicion del menu-->
+		<nav>
+			<h2>Metodos de ordenamiento de la información</h2>
+			<ul class="menu">
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="#">Material de lectura</a>
+					<ul>
+						<li><a href="tipovariables.html">Presentación Tipos de variables</a></li>
+						<li><a href="vector.html">Presentación que es un vector</a></li>
+						<li><a href="metodoburbuja.html">Presentación metodo burbuja</a></li>
+						<li><a href="metodoseleccion.html">Presentación metodo Selección</a></li>
+						<li><a href="metodoinsercion.html">Presentación metodo Inserción</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Material multimedia</a>
+					<ul>
+						<li><a href="videoburbuja.html">Video metodo Burbuja</a></li>
+						<li><a href="videoseleccion.html">Video metodo Selección</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Actividades</a>
+					<ul>
+						<li>
+							<a href="actividadburbuja.html">Actividades metodo burbuja</a>
+						</li>
+						<li>
+							<a href="actividadseleccion.html">Actividades metodo seleccion</a>
+						</li>
+						<li>
+							<a href="actividadinsercion.html">Actividades metodo inserción</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="participantes.html">Autor</a>
+				</li>
+
+			</ul>
+		</nav>
+		
+		<!--contenido de la pagina-->
+		<section id="contenido">
+			<imagen id="participantes">
+				<img id="salomon" src="img/foto salomon.jpeg" alt="foto autor salomon">
+			</imagen>
+
+			<article class="info_autor">
 				<br>
 				<br>
 				<p>Salomón Vaca Ahumada</p>
@@ -55,8 +84,8 @@
 				<p>Curso diseño de paginas WEB</p>
 				<br>
 				<p>301122_19</p>
+			
 			</article>
-		
 			
 		</section>
 		<section id="contenido1">
@@ -64,31 +93,43 @@
 				<h2>Autores</h2>
 				
 			</hgroup>
+		</section>
+		
+		<!--espacio de Twitter-->
+		<aside >
+			<section id="twitterunad">
+				<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+		</aside>
+		<!-- Definicion de los botones de avance-->
+		<div class="boton_previous">
+			<a href="actividadinsercion.html">&lt</a>
+		</div>
+		<!--<div class="boton_next">
+			<a href="actividadburbuja.html">&gt</a>
 
-		</section>
-		<section id="boton">
-			<a href="index.html">Inicio</a>
-		</section>
-		<section id="twitterunad">
-			<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</section>
+		</div>-->
+	
 	
 	</div>
-
-		<footer>
+	
+	<!-- contenido del pie de pagina-->	
+	<footer>
 		Salomon Vaca Ahumada.
 		<br>
 		Skype: salomon.vaca
 		<br>
 		<a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</footer>
-
-
 	
-
-
+	
+	
+	<!-- Insercion de librerias de javaScript-->
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/prefixfree.js"></script>
+
 </body>
+
+
 </html>
